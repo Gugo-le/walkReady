@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="WALKREADY icon">
+  <rect width="128" height="128" rx="26" fill="#1e1e1c"/>
+  <path d="M34 94V34h18l12 24 12-24h18v60h-16V58l-14 26h-8L50 58v36H34z" fill="#f5f3ee"/>
+  <circle cx="92" cy="32" r="8" fill="#d9cbb3"/>
+</svg>

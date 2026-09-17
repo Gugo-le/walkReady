@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>WALKREADY — 걷기 전에, 준비부터.</title>
+
+  <meta
+    name="description"
+    content="장거리 걷기 여행을 위한 일정, 준비물, 배낭 무게, 날씨, 코스 관리 앱"
+  />
+  <meta name="theme-color" content="#1e1e1c" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main id="top">
+    <section class="section" id="checklist">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">PACKING LIST</span>
+          <h2>준비물 체크리스트</h2>
+          <p>100km 이상 걷는 여행을 기준으로 필요한 물건을 정리했어.</p>
+        </div>
+
+        <div class="checklist-progress">
+          <strong id="checkProgressText">0%</strong>
+          <div class="progress-bar">
+            <span id="checkProgressBar"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="checklist-layout">
+        <div class="checklist-main">
+          <div class="checklist-category">
+            <div class="category-header">
+              <div>
+                <span>01</span>
+                <h3>걷기 장비</h3>
+              </div>
+              <span id="categoryCountWalking">0 / 0</span>
+            </div>
+            <div class="checklist-items" id="walkingItems"></div>
+          </div>
+
+          <div class="checklist-category">
+            <div class="category-header">
+              <div>
+                <span>02</span>
+                <h3>의류</h3>
+              </div>
+              <span id="categoryCountClothes">0 / 0</span>
+            </div>
+            <div class="checklist-items" id="clothesItems"></div>
+          </div>
+
+          <div class="checklist-category">
+            <div class="category-header">
+              <div>
+                <span>03</span>
+                <h3>전자기기</h3>
+              </div>
+              <span id="categoryCountElectronics">0 / 0</span>
+            </div>
+            <div class="checklist-items" id="electronicsItems"></div>
+          </div>
+
+          <div class="checklist-category">
+            <div class="category-header">
+              <div>
+                <span>04</span>
+                <h3>위생 · 응급</h3>
+              </div>
+              <span id="categoryCountFirstAid">0 / 0</span>
+            </div>
+            <div class="checklist-items" id="firstAidItems"></div>
+          </div>
+
+          <div class="checklist-category">
+            <div class="category-header">
+              <div>
+                <span>05</span>
+                <h3>음식 · 수분</h3>
+              </div>
+              <span id="categoryCountFood">0 / 0</span>
+            </div>
+            <div class="checklist-items" id="foodItems"></div>
+          </div>
+
+          <div class="custom-item-box">
+            <input type="text" id="customItemInput" placeholder="직접 준비물을 추가하세요" />
+            <button class="button button-dark small-button" id="addCustomItem" type="button">추가</button>
+          </div>
+        </div>
+
+        <aside class="checklist-side">
+          <div class="side-card">
+            <span class="eyebrow">PACKING TIP</span>
+            <h3>배낭은<br>가볍게.</h3>
+            <p>장거리 걷기에서는 물까지 포함한 배낭 무게가 중요해. 가능한 한 6~7kg 안쪽으로 맞춰보자.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
